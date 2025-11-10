@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="writing.css" rel="stylesheet"> <!--da vidim je li ok-->
+    <title>ScenarijPro2</title>
+  </head>
+  <body>
+   <header>
+    <i class="fas fa-arrow-left"></i>
+    <h1>THE LAST STARSHIP (Draft 2)</h1> <!-- Naslov u velikim slovima -->
+    <div class="dugmici">
+        <button class="scena">SCENA</button>
+        <button class="akcija">Akcija</button>
+        <button class="lik">Lik</button>
+        <button class="dijalog">Dijalog</button>
+    </div>
+    <button class="spasi"> <i class="fas fa-check"></i>Spasi</button>
+  </header>
+  <div class="okvir">
+  <div class="lijevo">
+        <div class="scene-counter">
+            <i class="fa-solid fa-film"></i>
+            <span>Scene: <strong id="brojacScene">(12)</strong></span>
+        </div>
+       <ol id="listaScena" class="scene-lista">
+        <!-- Scene će biti generirane JavaScript-om -->
+          <li class="elementi active">
+            <div class="naslovScene" id="naslov">INT. STARSHIP BRIDGE – NIGHT</div>
+                <div class="scene-pages" id="brojStranica">5/8</div>
+            </li>
+            <li class="elementi">
+                <div class="naslovScene" id="naslov">EXT.ASTEROID FILED-DAY</div>
+                <div class="scene-pages" id="brojStranica">(3/8)</div>
+
+            </li>
+            <li class="elementi">
+                <div class="naslovScene" id="naslov">int. engine room- night</div>
+                <div class="scene-pages" id="brojStranica">(2/8)</div>
+            </li>
+    </ol>
+        
+    </div><!--kraj lijevo-->
+   <div class="desno">
+    <h1 class="naslovScenarija">EXT. LUNAR SURFACE - DAY</h1>
+    <p class="tekstScenarija">The vast, grey SILENCE of the moon. Dust motes hang impossibly still in the weak light. CAPTAIN KIRA (40s, sharp, tired) walks toward a ruined DOME, her footsteps crunching.</p>
+   </div><!--kraj desno-->
+  </div><!--kraj okvira-->
+  </body>
+</html>

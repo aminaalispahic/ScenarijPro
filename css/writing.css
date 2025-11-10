@@ -1,0 +1,274 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw; /* 100% širine viewport-a */
+    height: 100vh; /* 100% visine viewport-a */
+    overflow-x: hidden; /* Spriječi horizontalni scroll */
+      background-color: rgb(181, 177, 177); /* Siva pozadina */
+          font-family: 'Poppins', 'Inter', sans-serif;
+      
+
+}
+.desno,
+.desno * { /* 👈 * znači "svi elementi unutar .desno" */
+    font-family: "Courier Prime", "Courier New", monospace !important;
+}
+ header {
+    display: flex;
+    position: sticky;
+    top: 0; /* Držimo zaglavlje na vrhu */
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Dodajemo blaganu sjenu */
+    align-items: center; /* Centriranje sadržaja vertikalno */
+    padding: 20px 20px;
+    justify-content: flex-start; /* Poravnava sadržaj na lijevu stranu */
+}
+
+header i, h1 {
+    font-size: 20pt;
+    padding: 20px;
+    color: rgb(196, 194, 194);
+    text-align: left; /* Lijevo poravnanje teksta */
+}
+
+        header h1{
+             text-transform: uppercase;
+             font-weight: bold;
+             color: black;
+             /*margin-right:90px;*/
+        }
+
+       /* header p { mozda mi vise ne treba
+            font-size: 30pt;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase; /* Možeš ostaviti, ako želiš velika slova 
+            flex-grow: 1;  /* Ovo omogućava da zauzima preostali prostor 
+        }*/
+
+        .dugmici {
+            display: flex;
+            justify-content: center; /* Centriranje horizontalno */
+           align-items: center;   
+           margin-left:40px;
+           
+          
+           
+            
+        }
+
+        .dugmici button {
+            text-transform: uppercase;
+            margin-left: 10px; /* Razmak između dugmadi */
+             height:6vh;
+             width: 150px;
+             gap:8px;
+             border-radius: 15px;
+           border: none;              /* 👈 Ukloni border ako postoji */
+    cursor: pointer; 
+     background-color: rgb(225, 212, 212);
+      box-shadow: 0 2px 6px rgba(45, 44, 44, 0.05);
+
+
+             
+        }
+       .dugmici button:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.2s ease; /* Glatka tranzicija */
+}
+       .spasi {
+    display: flex;
+    align-items: center;        /* Vertikalno centriranje */
+    justify-content: center;    /* Horizontalno centriranje */
+    gap: 3px;                   /* 👈 Razmak između ikone i teksta */
+    background-color: #28a745;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 15pt;
+    color: white;
+    padding: 18px 28px;  
+    width: auto;                 /* 👈 Promijenjeno sa 150px na auto */
+    min-width: 120px; 
+    height: 7vh;
+    border: none;              /* 👈 Ukloni border ako postoji */
+    cursor: pointer;   
+    margin-left: auto; /* Automatski prebacuje dugme na desnu stranu */
+    transition: background-color 0.2s ease;       /* 👈 Pointer na hover */
+}
+.spasi:hover{
+    background-color: #218838;
+}
+
+.spasi i {
+    color: white;
+    font-size: 20pt;
+ 
+}
+.okvir{
+    display:flex;
+    
+}
+.lijevo {
+     width: 250px;              
+    background-color: #f8f9fb;
+         
+}
+
+.scene-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    margin: 20px 0;
+    background-color: #e8f4f8;  /* Svijetlo plava pozadina */
+    border-radius: 8px;
+    color: #333;
+    font-size: 14pt;
+}
+
+.scene-counter i {
+    color: #2196F3;
+    font-size: 18pt;
+}
+
+.scene-counter strong {
+    color: #2196F3;
+    font-size: 18pt;
+}
+
+.scene-lista{
+    list-style: none;
+    counter-reset: scene-counter;
+    width: 230px;
+}
+.elementi {
+    
+    
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    counter-increment: scene-counter; 
+    
+    color:gray;
+    top:0;
+   
+   
+}
+
+.elementi.active {
+    background-color: #E9EEFF;
+    border-left: 4px solid #5B3FFF;  /* Plava linija lijevo */
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+      /* Trebalo bi biti relativno pozicionirano */
+}
+
+.elementi.active::before {
+    content: '';  
+    
+    left: 0;  /* Poravnanje na lijevu stranu */
+    top: 0;   /* Početak na vrhu */
+    width: 4px;   /* Širina linije */
+    height: 100%;  /* Visina linije koja odgovara visini roditeljskog elementa */
+    background-color: #5B3FFF; /* Plava boja linije */
+    border-radius: 10px 0 0 10px;  /* Zaobljenje na lijevoj strani linije */
+}
+.naslovScene {
+    content: counter(scene-counter) ". ";
+      text-transform: uppercase;
+   font-weight: bold;
+}
+.desno {
+    flex: 1; /* Zauzima preostali prostor */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08), -4px -4px 8px rgba(0, 0, 0, 0.04);
+    margin: 60px 90px 20px 90px; /* gore, desno, dole, lijevo */
+    padding: 40px; /* 👈 DODAJ padding za sadržaj */
+    font-family: "Courier Prime", "Courier New", monospace !important;
+}
+.naslovScenarija{
+    margin-top: 350px;
+    margin-bottom: 150px;
+    margin-left:30px;
+    text-transform: uppercase;
+    color:#D68A00;
+}
+.tekstScenarija {
+    
+    font-family: "Courier Prime", "Courier New", monospace !important;
+    font-size: 25pt;
+    line-height: 1.5;
+    margin: 1.5em 0;
+    text-align: left;
+}
+@media (max-width: 750px) {
+    /* Header ostaje horizontalan ali se wrauje */
+    header {
+        flex-wrap: wrap; /* 👈 Omogući prelamanje */
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+        justify-content: space-between; /* 👈 Rasporedi elemente */
+    }
+
+    /* Ikona i naslov ostaju zajedno u prvom redu */
+    header i {
+        padding: 10px;
+        order: 1; /* 👈 Prvi element */
+    }
+
+    header h1 {
+        font-size: 20pt;
+        padding: 0;
+        flex-grow: 0; /* 👈 Ne širi se više */
+        order: 2; /* 👈 Drugi element */
+    }
+
+    /* Dugmad u SREDNJEM redu */
+    .dugmici {
+        order: 3; /* 👈 Treći - idu u novi red */
+        width: 100%; /* 👈 Zauzimaju cijelu širinu = novi red */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* 👈 Centrirana */
+        gap: 10px;
+    }
+
+    .dugmici button {
+        width: calc(50% - 5px); /* 👈 2 dugmeta po redu */
+        margin: 0;
+    }
+
+    /* "Spasi" dugme u TREĆEM redu */
+    .spasi {
+        order: 4; /* 👈 Četvrti - zadnji red */
+        width: 100%; /* 👈 Zauzima cijelu širinu = novi red */
+        margin: 0;
+    }
+
+    /* Sidebar */
+    .okvir {
+        flex-direction: column;
+    }
+
+    .lijevo {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .desno {
+        margin: 20px;
+        padding: 20px;
+    }
+}
