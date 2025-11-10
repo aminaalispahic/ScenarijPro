@@ -1,0 +1,323 @@
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f6fa;
+    margin: 0;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    
+}
+
+.okvir {
+    display: flex;
+    flex-direction: row;/*dodala naknadno moze zezati*/
+    width: 100%;
+    height: 100vh;  /* ← DODAJ OVO - Cijela visina prozora */
+   /* gap: 20px;*/
+    
+}
+
+.lijevo {
+    padding:15px;
+    width:  250px;
+    background-color: #f8f9fb;
+      height: 100vh;  /* ← DODAJ OVO - Cijela visina prozora */
+      overflow-y: auto;
+   
+    
+}
+
+/*fontovi fale*/
+.lijevo p {
+
+  font-size: 16pt;
+ color: rgb(166, 164, 164);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    margin: 8px 0;
+    border-radius: 8px;  /* ← OVO ZAOBLJAVA RUBOVE */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.aktivno {
+     padding: 12px 16px;
+     border-radius: 8px;
+     cursor: pointer;
+     background-color: rgb(41, 41, 124);
+}
+.lijevo p:hover {
+    background-color: #d6dbf6; 
+    color: rgb(60, 60, 233); 
+    
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #d1d5db; /* Siva linija */
+    margin: 35px 0; /* 20px gore i dole */
+}
+/*nije mi malo jasno*/
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.user-profile:hover {
+    background-color: #9b9c9e;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    border-radius: 50%; /* Čini da bude krug */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    flex-shrink: 0; /* Ne smanjuje se */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.user-name {
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.user-status {
+    color: #9ca3af; /* Svjetlija nijansa sive */
+    font-size: 12px;
+}
+/*do ovjde*/
+
+.desno {
+    flex:1; 
+    padding:35px;
+    overflow-y: auto;
+    
+}
+
+.pretraga{
+    height:6vh;
+    width:120px;
+    border-radius: 12px;
+    padding-right: 15px;
+    padding-top:0px ;
+}
+
+button {
+    background-color:#5B3FFF;
+     color: white;
+     border-radius: 8px; 
+     height:6vh; 
+     width:150px;
+    transition: all 0.3s ease; 
+    font-size: 12pt;
+    gap:20px;
+
+}
+
+button:hover{
+    background-color: rgb(4, 4, 77);
+}
+.zaglavlje{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kartice {
+   display:grid;
+   grid-template-columns: repeat(2, 1fr); /* 2 kolone na većim ekranima */
+   gap: 30px;
+   
+
+   
+
+}
+.kartica{
+   border-radius: 30px;
+   background-color: white;
+   padding:20px;
+   height:30vh;
+}
+.kartica:hover{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+   
+}
+.kartica.active {
+  position: relative;
+  border: 2px solid blue; 
+  background-color: #f9eeee; 
+}
+
+
+.kartica.active::before {
+  content: "Aktivan";
+  position: absolute;
+  top: 10px;
+ right: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 17px;
+}
+.kartica.kreiraj{
+  display: flex;
+
+    flex-direction: column;
+  justify-content: center; /* Horizontalno centriranje */
+  align-items: center; /* Vertikalno centriranje */
+  font-size: 20pt;
+  border:dashed gray;
+  background-color: rgb(236, 229, 229);
+ 
+  align-items: center;
+}
+
+.naziv{
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 8px;
+   font-size: 20pt;
+}
+.opis{
+   margin-bottom: 40px;
+   color:rgb(178, 174, 174)
+}
+.status{
+  font-size: 14pt;
+}
+.broj{
+   font-size: 14pt;
+}
+.vrijeme{
+ font-size: 14pt;
+}
+@media (max-width: 750px) {
+    body {
+        flex-direction: column; /* 👈 Vertikalan layout */
+    }
+
+    .okvir {
+        flex-direction: column; /* 👈 Sidebar ide iznad sadržaja */
+        height: auto; /* 👈 Visina se prilagođava */
+    }
+
+    .lijevo {
+        width: 100%; /* 👈 Puna širina */
+        height: auto; /* 👈 Visina prema sadržaju */
+        max-height: 300px; /* 👈 Ograniči visinu */
+        overflow-y: auto; /* 👈 Scroll ako je potrebno */
+        border-bottom: 1px solid #e5e7eb; /* 👈 Vizuelna separacija */
+    }
+
+    .desno {
+        padding: 20px; /* 👈 Manji padding */
+        width: 100%;
+    }
+
+    /* Zaglavlje */
+    .zaglavlje {
+        flex-direction: column; /* 👈 Elementi idu vertikalno */
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .zaglavlje h1 {
+        font-size: 24pt; /* 👈 Manji naslov */
+    }
+
+    /* Pretraga i dugme */
+    .pretraga {
+        width: 100%; /* 👈 Puna širina */
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%; /* 👈 Puna širina */
+    }
+
+    /* Kartice - 1 kolona */
+    .kartice {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+
+    .kartica {
+        height: auto; /* 👈 Visina prema sadržaju */
+        min-height: 200px; /* 👈 Minimalna visina */
+    }
+
+    /* User profile u sidebaru */
+    .user-profile {
+        padding: 10px;
+    }
+
+    .user-avatar {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .user-name {
+        font-size: 13px;
+    }
+
+    .user-status {
+        font-size: 11px;
+    }
+
+    /* Sidebar paragraf */
+    .lijevo p {
+        font-size: 14pt; /* 👈 Manji font */
+        padding: 10px 12px;
+    }
+
+    /* Separator */
+    .separator {
+        margin: 20px 0; /* 👈 Manji razmak */
+    }
+}
+
+/* EXTRA MALI EKRANI (telefoni < 480px) */
+@media (max-width: 480px) {
+    .desno {
+        padding: 15px; /* 👈 Još manji padding */
+    }
+
+    .zaglavlje h1 {
+        font-size: 20pt;
+    }
+
+    .naziv {
+        font-size: 18pt;
+    }
+
+    button {
+        font-size: 11pt;
+        height: 50px;
+    }
+
+    .kartica {
+        padding: 15px;
+    }
+}
