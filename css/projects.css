@@ -1,4 +1,6 @@
-
+*{
+  font-family: "Poppins", "Inter", sans-serif;
+}
 body {
     display: flex;
     flex-direction: row;
@@ -10,24 +12,24 @@ body {
 
 .okvir {
     display: flex;
-    flex-direction: row;/*dodala naknadno moze zezati*/
+    flex-direction: row;
     width: 100%;
-    height: 100vh;  /* ← DODAJ OVO - Cijela visina prozora */
+    height: 100vh;  
    /* gap: 20px;*/
     
 }
 
 .lijevo {
     padding:15px;
-    width:  250px;
+    width: 250px;
     background-color: #f8f9fb;
-      height: 100vh;  /* ← DODAJ OVO - Cijela visina prozora */
+      height: 100vh;  
       overflow-y: auto;
    
     
 }
 
-/*fontovi fale*/
+
 .lijevo p {
 
   font-size: 16pt;
@@ -37,7 +39,7 @@ body {
     gap: 10px;
     padding: 12px 16px;
     margin: 8px 0;
-    border-radius: 8px;  /* ← OVO ZAOBLJAVA RUBOVE */
+    border-radius: 8px;  
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -45,7 +47,7 @@ body {
      padding: 12px 16px;
      border-radius: 8px;
      cursor: pointer;
-     background-color: rgb(41, 41, 124);
+     background-color: rgb(46, 46, 227);
 }
 .lijevo p:hover {
     background-color: #d6dbf6; 
@@ -55,10 +57,10 @@ body {
 
 .separator {
     border: none;
-    border-top: 1px solid #d1d5db; /* Siva linija */
-    margin: 35px 0; /* 20px gore i dole */
+    border-top: 1px solid #d1d5db; 
+    margin: 35px 0; 
 }
-/*nije mi malo jasno*/
+/*korisnik*/
 .user-profile {
     display: flex;
     align-items: center;
@@ -70,7 +72,7 @@ body {
 }
 
 .user-profile:hover {
-    background-color: #9b9c9e;
+    background-color: #b5b5b5;
 }
 
 .user-avatar {
@@ -78,13 +80,13 @@ body {
     height: 40px;
     background-color: #333333;
     color: white;
-    border-radius: 50%; /* Čini da bude krug */
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     font-size: 16px;
-    flex-shrink: 0; /* Ne smanjuje se */
+    flex-shrink: 0; 
 }
 
 .user-info {
@@ -100,7 +102,7 @@ body {
 }
 
 .user-status {
-    color: #9ca3af; /* Svjetlija nijansa sive */
+    color: #9ca3af; 
     font-size: 12px;
 }
 /*do ovjde*/
@@ -142,14 +144,17 @@ button:hover{
     align-items: center;
 }
 
+.boldiraj {
+    font-weight: bold;
+}
+.obicni-text {
+    color: grey; 
+}
 .kartice {
    display:grid;
-   grid-template-columns: repeat(2, 1fr); /* 2 kolone na većim ekranima */
+   grid-template-columns: repeat(2, 1fr); 
    gap: 30px;
    
-
-   
-
 }
 .kartica{
    border-radius: 30px;
@@ -164,22 +169,26 @@ button:hover{
 .kartica.active {
   position: relative;
   border: 2px solid blue; 
-  background-color: #f9eeee; 
+ 
+  display: flex;  /* ← Dodaj ovo */
+  flex-direction: column;  /* ← Dodaj ovo */
 }
 
 
 .kartica.active::before {
   content: "Aktivan";
   position: absolute;
-  top: 10px;
- right: 10px;
-  background-color: #007bff;
-  color: white;
+  top: 20px;
+ right: 20px;
+ color: rgb(70, 70, 225);
+   background-color: rgb(205, 205, 246);
   padding: 5px 10px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 17px;
+ 
 }
+
 .kartica.kreiraj{
   display: flex;
 
@@ -188,7 +197,7 @@ button:hover{
   align-items: center; /* Vertikalno centriranje */
   font-size: 20pt;
   border:dashed gray;
-  background-color: rgb(236, 229, 229);
+  background-color: rgb(199, 198, 198);
  
   align-items: center;
 }
@@ -198,6 +207,10 @@ button:hover{
    text-transform: uppercase;
    margin-bottom: 8px;
    font-size: 20pt;
+   display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+   
 }
 .opis{
    margin-bottom: 40px;
@@ -214,46 +227,47 @@ button:hover{
 }
 @media (max-width: 750px) {
     body {
-        flex-direction: column; /* 👈 Vertikalan layout */
+        flex-direction: column;
     }
 
     .okvir {
-        flex-direction: column; /* 👈 Sidebar ide iznad sadržaja */
-        height: auto; /* 👈 Visina se prilagođava */
+        flex-direction: column;
+        height: auto;
     }
 
     .lijevo {
-        width: 100%; /* 👈 Puna širina */
-        height: auto; /* 👈 Visina prema sadržaju */
-        max-height: 300px; /* 👈 Ograniči visinu */
-        overflow-y: auto; /* 👈 Scroll ako je potrebno */
-        border-bottom: 1px solid #e5e7eb; /* 👈 Vizuelna separacija */
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        overflow-y: auto;
+        border-bottom: 1px solid #e5e7eb;
     }
 
     .desno {
-        padding: 20px; /* 👈 Manji padding */
+        padding: 20px;
         width: 100%;
     }
 
     /* Zaglavlje */
     .zaglavlje {
-        flex-direction: column; /* 👈 Elementi idu vertikalno */
+        flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
 
     .zaglavlje h1 {
-        font-size: 24pt; /* 👈 Manji naslov */
+        font-size: 24pt;
     }
 
     /* Pretraga i dugme */
     .pretraga {
-        width: 100%; /* 👈 Puna širina */
+        width: 100%;
         margin-bottom: 10px;
     }
 
     button {
-        width: 100%; /* 👈 Puna širina */
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     /* Kartice - 1 kolona */
@@ -263,8 +277,20 @@ button:hover{
     }
 
     .kartica {
-        height: auto; /* 👈 Visina prema sadržaju */
-        min-height: 200px; /* 👈 Minimalna visina */
+        height: auto;
+        min-height: 200px;
+    }
+
+    /* FIX ZA "AKTIVAN" BADGE */
+    .kartica.active .naziv {
+        padding-right: 90px; /* ← Prostor za badge */
+    }
+    
+    .kartica.active::before {
+        font-size: 13px; /*  Manji font */
+        padding: 4px 8px; /* ← Manji padding */
+        top: 15px; /* ← Bliže vrhu */
+        right: 15px; /* ← Bliže desnoj ivici */
     }
 
     /* User profile u sidebaru */
@@ -288,20 +314,19 @@ button:hover{
 
     /* Sidebar paragraf */
     .lijevo p {
-        font-size: 14pt; /* 👈 Manji font */
+        font-size: 14pt;
         padding: 10px 12px;
     }
 
     /* Separator */
     .separator {
-        margin: 20px 0; /* 👈 Manji razmak */
+        margin: 20px 0;
     }
 }
-
 /* EXTRA MALI EKRANI (telefoni < 480px) */
 @media (max-width: 480px) {
     .desno {
-        padding: 15px; /* 👈 Još manji padding */
+        padding: 15px;
     }
 
     .zaglavlje h1 {
@@ -320,4 +345,15 @@ button:hover{
     .kartica {
         padding: 15px;
     }
+
+    /* FIX ZA EXTRA MALE EKRANE */
+    .kartica.active .naziv {
+        padding-right: 80px; 
+    }
+    
+    .kartica.active::before {
+        font-size: 11px; 
+        padding: 3px 6px;
+    }
 }
+

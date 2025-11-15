@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Poppins:ital@100;200;400;600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Inter:ital@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="..\css\user.css" rel="stylesheet">
+    
+   
+  <title>ScenarijPro</title>
+</head>
+<body>
+    <div class="form-container">
+        <form class="user-form">
+            <h1 class="form-title">
+                <strong>Postavke korisničkog računa</strong>
+            </h1>
+            <hr class="blue-line">
+            <p class="napomena">Upravljajte vašim korisničkim računom, sigurnosnim postavkama i notifikacijama</p>
+            <div class="korisnickiPodaci">
+             <h3>Podaci o korisničkom računu</h3>
+              
+             <div class="forme">
+            <label for="imeIprezime">Ime i prezime:</label>
+            <input type="text" id="imeIprezime" name="imeIprezime" placeholder="John Doe" class="unosIme" pattern="[A-Za-z]+" title="Samo slova" required>
+            </div>
+            <div class="forme">
+            <label for="mail">Email adresa:</label>
+            <input type="text" id="mail" name="mail" placeholder="john.doe@gmail.com" class="unosIme">
+            </div>
+            <div class="forme">
+            <label for="broj">Broj elemenata po stranici:</label>
+            <input type="number" id="broj" min="1" max="100" required name="broj" class="unosIme" placeholder="npr.24">
+            </div>
+           </div><!--kraj korisnickih podataka-->
+
+            <div class="sigurnost">
+                <h3>Sigurnosne postavke</h3>
+            <div class="forme">
+            <label for="novaSifra">Nova šifra</label>
+            <input type="password" id="novaSifra" name="novaSifra" class="unosSifre" placeholder="**********">
+            </div>
+            <div class="cek cekiraj forme">
+            <input type="checkbox" id="autentifikacija" name="autentifikacija" class="cekiraj">
+            <label for="autentifikacija" style="padding-left:5px">Omogući Two-Factor Authentication (2FA)</label>
+            </div>
+</div><!--kraj div za sigurnost-->
+      <div class="notifikacije">
+    <h3>Notifikacije</h3>
+    <div class="forme">
+        <label for="preferiranNacinKomunikacije" class="preferirano">Preferirani način komunikacije:</label>
+    <div class="izbori">
+            <input type="radio" id="email" name="preferiranNacinKomunikacije">
+            <label for="email" style="margin-right: 15px;">Email</label>
+            <input type="radio" id="sms" name="preferiranNacinKomunikacije">
+            <label for="sms" style="margin-right: 15px;">SMS(Text)</label>
+            <input type="radio" id="none" name="preferiranNacinKomunikacije">
+            <label for="none" style="margin-right: 15px;">None</label>
+        </div>
+    </div>
+           <div class="forme">
+            <label for="frekvencijaNotifikacija">Notification frequency</label>
+            <select id="frekvencija" name="frekvencijaNotifikacija">
+    <option value="daily" selected>Daily</option>
+    <option value="weekly">Weekly</option>
+    <option value="monthly">Monthly</option>
+    <option value="never">Never</option>
+    </select>
+    </div>
+        </div>
+        <hr style="color:gray; margin-bottom: 25px;">
+        <div class="dugmeSpasi">
+            <button class="spasi">Spasi promjene</button>
+            </div>
+          </div><!--kraj div za notifikacije-->
+          </form>
+        
+   
+
+    
+</body>
+</html>
