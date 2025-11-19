@@ -114,7 +114,7 @@ body {
     margin-left:0;
     border-color: rgb(217, 65, 65);
 }
-.cek{
+
 
    .cek {
     display: flex;
@@ -124,7 +124,7 @@ body {
     margin-top: 20px;
 }
    
-}
+
 .cekiraj{
     width: 16px;
    flex-shrink: 0; 
@@ -190,6 +190,7 @@ body {
     max-width: 700px; 
     text-align: center; 
 }
+/*
 .forme {
     display: flex;
     flex-direction: row; 
@@ -198,7 +199,7 @@ body {
     width: 100%;
     gap: 10px; 
 }
-
+*/
 .forme label {
     width: 150px; 
     flex-shrink: 0; 
@@ -213,6 +214,70 @@ body {
     min-width: 0; 
     box-sizing: border-box;
 }
+@media(min-width:900px){
+    body{
+     display:flex;
+     flex-direction: row;
+     margin-right: 5px;
+    }
+    .korisnickiPodaci{
+        width:70%;
+    }
+    .zajedno{
+        display: flex;
+        flex-direction: column;
+        width:30%;
+       
+        
+        
+    }
+
+    
+    .notifikacije{
+        flex:1;
+    }
+    
+   .dodatni{
+      display:flex;
+     flex-direction: row;
+   }
+   
+   .sigurnost .forme{
+    width:15%;
+   }
+   .sigurnost input{
+    width:10px;
+   }
+    .sigurnost{
+        flex:1;
+    }
+     .forme input[type="text"], 
+    .forme input[type="email"], 
+    .forme input[type="number"], 
+    .forme input[type="password"],
+    .notifikacije select {
+        align-items: flex-start;
+         
+        
+        flex:1;
+        margin-right: 10px;
+    }
+    input[type="radio"]{
+        align-items: flex-start;
+        
+        
+        flex:1;
+        margin-right: 10px;
+    }
+    .izbori {
+        flex-direction: column; 
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+/*
 @media screen and (max-width: 750px) {
    
     .forme {
@@ -220,7 +285,7 @@ body {
         align-items: flex-start; 
     }
 
-    /* Stilizacija labele na malim ekranima */
+    
     .forme label {
         flex-basis: auto; 
         text-align: left; 
@@ -229,7 +294,7 @@ body {
         width: 100%; 
     }
 
-    /* Stilizacija input polja na malim ekranima */
+   
     .forme input[type="text"], 
     .forme input[type="email"], 
     .forme input[type="number"], 
@@ -239,7 +304,7 @@ body {
         max-width: none; 
     }
 
-    /* Za Radio dugmad (Preferirani način komunikacije) */
+    
     .izbori {
         flex-direction: column; 
         align-items: flex-start;
@@ -263,3 +328,4 @@ body {
         word-wrap: break-word; 
     }
 }
+*/
