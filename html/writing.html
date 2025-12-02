@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+
+    <link href="../css/writing.css" rel="stylesheet"> <!--da vidim je li ok-->
+    
+    
+    
+    <title>ScenarijPro</title>
+  </head>
+  <body>
+    
+   
+   <header>
+    <button class="strelica"><i class="fas fa-arrow-left"></i></button>
+    <h1>THE LAST STARSHIP (Draft 2)</h1> <!-- Naslov u velikim slovima -->
+    <div class="dugmici">
+        <button class="scena">SCENA</button>
+        <button class="akcija">Akcija</button>
+        <button class="lik">Lik</button>
+        <button class="dijalog">Dijalog</button>
+    </div>
+    <button class="spasi"> <i class="fas fa-check"></i>Spasi</button>
+  </header>
+  <div class="pozivi">
+    <button id="boldiraj">Bold</button>
+    <button id="italik">Italic</button>
+    <button id="PODVUCI">Underline</button>
+   <button id="brojrijeci">Broj rijeci</button>
+   <button id="uloge">Uloge</button>
+   <button id="pogresneUloge">Pogresne uloge</button>
+   <input type="text" id="nadiUloge" name="uloge" placeholder="Napisite ulogu" >
+   <button id="brojLinija">Broj linija</button>
+  <button id="scenarij">Scenarij Uloge</button>
+   <button id="grupisanje">Grupisi uloge</button>
+  </div> <!--Div za pozivanje funkcija u JS-u-->
+  <div class="okvir">
+  <div class="lijevo">
+        <div class="scene-counter">
+            
+            <span>Scene: <strong id="brojacScene">(12)</strong></span>
+        </div>
+       <ol id="listaScena" class="scene-lista">
+        <!-- Scene će biti generirane JavaScript-om -->
+          <li class="elementi active">
+            <div class="naslovScene" id="naslov">INT. STARSHIP BRIDGE - NIGHT</div>
+                <div class="scene-pages" id="brojStranica">(5/8)</div>
+            </li>
+            <li class="elementi">
+                <div class="naslovScene" id="naslov">EXT.ASTEROID FILED-DAY</div>
+                <div class="scene-pages" id="brojStranica">(3/8)</div>
+
+            </li>
+            <li class="elementi">
+                <div class="naslovScene" id="naslov">int. engine room- night</div>
+                <div class="scene-pages" id="brojStranica">(2/8)</div>
+            </li>
+    </ol>
+        
+    </div><!--kraj lijevo-->
+   <div class="editor-dio"> 
+            <div id="poruke">
+                
+            </div>
+            
+            <div id="divEditor" contenteditable="true" class="desno" >
+                
+                <h1 class="naslovScenarija">EXT. LUNAR SURFACE - DAY</h1>
+                <p class="tekstScenarija"> 
+                    MAR<b>KO</b><br>
+                    Pozdrav svima.<br>
+                    IVAN<br>
+                    I tebi pozdrav.<br>
+                    GLAS IZ POZADINE<br>
+                    (šapat)<br>
+                    Jeste li tu?<br>
+                    MARKO<br>
+                    Tu sam.<br></p>
+
+                
+
+                    
+                
+            </div><!--kraj desno-->
+        </div>
+        
+    </div><!--kraj okvira-->
+ <script src="../js/EditorTeksta.js"></script>
+    <script src="../js/editor.js"></script>
+  </body>
+</html>

@@ -1,0 +1,378 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw; 
+    height: 100vh; 
+    overflow-x: hidden; 
+    background-color: #f5f6fa; 
+          
+      
+
+}
+.desno,
+.desno * { 
+    font-family: "Courier Prime", "Courier New", monospace !important;
+}
+ header {
+    display: flex;
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    align-items: center; 
+    padding: 20px 20px;
+    justify-content: flex-start; 
+}
+.pozivi{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   /* margin:20px;*/
+    padding:30px;
+    gap:7px;
+}
+.pozivi button{
+    padding:15px;
+    background-color:rgb(168, 168, 226);
+    border-radius: 15px;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.pozivi button:hover{
+background-color: rgb(133, 133, 184);
+    transition: background-color 0.2s ease;   
+}
+.pozivi input{
+     border-radius: 15px;
+     
+}
+header i,
+header h1  {
+    font-size: 20pt;
+    padding: 20px;
+    color: rgb(196, 194, 194);
+    text-align: left; 
+}
+
+        header h1{
+             text-transform: uppercase;
+             font-weight: bold;
+             color: black;
+             /*margin-right:90px;*/
+        }
+
+       /* header p { mozda mi vise ne treba
+            font-size: 30pt;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase; /* Možeš ostaviti, ako želiš velika slova 
+            flex-grow: 1;  /* Ovo omogućava da zauzima preostali prostor 
+        }*/
+
+.strelica{
+    border:none;
+    background-color: white;
+    cursor: pointer;
+}
+.strelica:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+        .dugmici {
+            display: flex;
+            justify-content: center; 
+           align-items: center;   
+           margin-left:40px;
+           
+           }
+
+        .dugmici button {
+            text-transform: uppercase;
+            margin-left: 10px; 
+             height:6vh;
+             width: 150px;
+             gap:8px;
+             border-radius: 15px;
+           border: none;              
+    cursor: pointer; 
+     background-color: rgb(167, 165, 165);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+       .dugmici button:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.2s ease; 
+}
+       .spasi {
+    display: flex;
+    align-items: center;        
+    justify-content: center;    
+    gap: 3px;                   
+    background-color: #28a745;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 15pt;
+    color: white;
+    padding: 14px 28px;  
+    width: auto;                
+    min-width: 120px; 
+    height: 7vh;
+    border: none;             
+    cursor: pointer;   
+    margin-left: auto;  
+    transition: background-color 0.2s ease;       
+}
+
+.spasi:hover{
+    background-color: #218838;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.spasi i {
+    color: white;
+    font-size: 20pt;
+ 
+}
+.okvir{
+    display:flex;
+    
+}
+.lijevo {
+    width: 250px;              
+    background-color: #f8f9fb;
+    padding: 20px 15px;
+         
+}
+
+.scene-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    margin: 20px 0;
+    
+    border-radius: 8px;
+    color: #333;
+    font-size: 14pt;
+}
+
+.scene-counter i {
+    color: #2196F3;
+    font-size: 18pt;
+}
+
+.scene-counter strong {
+    color: #2196F3;
+    font-size: 18pt;
+}
+
+.scene-lista{
+    list-style: none;
+    counter-reset: scene-counter;
+    width: 230px;
+}
+.elementi {
+     padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    counter-increment: scene-counter; 
+    flex-direction: column; 
+    gap: 5px;
+    color:gray;
+    top:0;
+   
+   
+}
+
+.elementi.active {
+    background-color: #E9EEFF;
+    border-left: 4px solid #5B3FFF;  
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+      
+}
+
+.elementi.active::before {
+    content: '';  
+    left: 0;  
+    top: 0;   
+    width: 4px;   
+    height: 100%;  
+    background-color: #5B3FFF; 
+    border-radius: 10px 0 0 10px;  
+}
+.naslovScene {
+    
+    text-transform: uppercase;
+   font-weight: bold;
+   
+}
+.naslovScene::before{
+     content: counter(scene-counter) ". ";
+}
+#poruke {
+    margin: 20px 90px 20px 90px; 
+    padding: 20px 40px;
+    background-color: rgb(149, 149, 213);
+    border: 1px solid blue;
+    border-radius: 8px;
+    min-height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+   
+}
+
+#poruke.aktivan {
+    display: block;
+}
+
+#poruke h3 {
+    margin: 0 0 10px 0;
+    color: #856404;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#poruke pre {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+#poruke p {
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #856404;
+}
+.editor-dio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+}
+
+.desno {
+    flex: 1; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08), -4px -4px 8px rgba(0, 0, 0, 0.04);
+    margin: 60px 90px 20px 90px; 
+    padding: 40px; 
+    font-family: "Courier Prime", "Courier New", monospace !important;
+}
+.naslovScenarija{
+    font-family: "Courier Prime", "Courier New", monospace !important;
+    margin-top: 350px;
+    margin-bottom: 150px;
+    margin-left:30px;
+    text-transform: uppercase;
+    color:#D68A00;
+}
+.tekstScenarija {
+    font-family: "Courier Prime", "Courier New", monospace !important;
+    font-size: 25pt;
+    
+ 
+    margin: 1.5em 30px; 
+    text-align: left;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    word-break: break-word; 
+   
+}
+@media (max-width: 750px) {
+    /* Header */
+    header {
+        position: sticky; 
+        top: 0;        
+        flex-wrap: wrap; 
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+        justify-content: space-between; 
+        z-index: 100;
+    }
+
+    header i {
+        padding: 10px;
+        order: 1; 
+    }
+
+    header h1 {
+        font-size: 18pt;
+        padding: 0;
+        flex-grow: 0; 
+        order: 2; 
+    }
+
+    /* Dugmad u DRUGOM redu - 2 po 2 */
+    .dugmici {
+        order: 3; 
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 10px;
+        margin-left: 0;
+    }
+
+    .dugmici button {
+        width: calc(50% - 5px); 
+        margin: 0;
+    }
+
+    .spasi {
+        order: 4; 
+        width: 100%;
+        margin: 0;
+    }
+
+   
+    .okvir {
+        flex-direction: column;
+    }
+
+    .lijevo {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    
+    .desno {
+        margin: 20px 20px 20px 20px;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+     .tekstScenarija {
+        font-size: 14pt; 
+        margin: 1.5em 0; 
+    }
+
+    /* Elementi u sidebaru */
+    .scene-lista {
+        width: 100%;
+    }
+}

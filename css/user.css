@@ -190,7 +190,7 @@ body {
     max-width: 700px; 
     text-align: center; 
 }
-/*
+
 .forme {
     display: flex;
     flex-direction: row; 
@@ -199,7 +199,7 @@ body {
     width: 100%;
     gap: 10px; 
 }
-*/
+
 .forme label {
     width: 150px; 
     flex-shrink: 0; 
@@ -214,6 +214,8 @@ body {
     min-width: 0; 
     box-sizing: border-box;
 }
+/*dodatni*/
+/*
 @media(min-width:900px){
     body{
      display:flex;
@@ -277,7 +279,7 @@ body {
     }
 
 }
-/*
+*/
 @media screen and (max-width: 750px) {
    
     .forme {
@@ -328,4 +330,3 @@ body {
         word-wrap: break-word; 
     }
 }
-*/
