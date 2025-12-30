@@ -9,7 +9,7 @@ body {
     width: 100vw; 
     height: 100vh; 
     overflow-x: hidden; 
-      background-color: #f5f6fa; 
+    background-color: #f5f6fa; 
           
       
 
@@ -30,7 +30,32 @@ body {
     padding: 20px 20px;
     justify-content: flex-start; 
 }
-
+.pozivi{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   /* margin:20px;*/
+    padding:30px;
+    gap:7px;
+}
+.pozivi button{
+    padding:15px;
+    background-color:rgb(168, 168, 226);
+    border-radius: 15px;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.pozivi button:hover{
+background-color: rgb(133, 133, 184);
+    transition: background-color 0.2s ease;   
+}
+.pozivi input{
+     border-radius: 15px;
+     
+}
 header i,
 header h1  {
     font-size: 20pt;
@@ -122,8 +147,9 @@ header h1  {
     
 }
 .lijevo {
-     width: 250px;              
+    width: 250px;              
     background-color: #f8f9fb;
+    padding: 20px 15px;
          
 }
 
@@ -195,6 +221,55 @@ header h1  {
 .naslovScene::before{
      content: counter(scene-counter) ". ";
 }
+#poruke {
+    margin: 20px 90px 20px 90px; 
+    padding: 20px 40px;
+    background-color: rgb(149, 149, 213);
+    border: 1px solid blue;
+    border-radius: 8px;
+    min-height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+   
+}
+
+#poruke.aktivan {
+    display: block;
+}
+
+#poruke h3 {
+    margin: 0 0 10px 0;
+    color: #856404;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#poruke pre {
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+#poruke p {
+    margin: 5px 0;
+    line-height: 1.6;
+    color: #856404;
+}
+.editor-dio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+}
+
 .desno {
     flex: 1; 
     background-color: #fff;
@@ -227,11 +302,14 @@ header h1  {
 @media (max-width: 750px) {
     /* Header */
     header {
+        position: sticky; 
+        top: 0;        
         flex-wrap: wrap; 
         height: auto;
         padding: 15px;
         gap: 15px;
         justify-content: space-between; 
+        z-index: 100;
     }
 
     header i {
@@ -258,18 +336,17 @@ header h1  {
     }
 
     .dugmici button {
-        width: calc(50% - 5px); /* ← 2 dugmeta po redu */
+        width: calc(50% - 5px); 
         margin: 0;
     }
 
-    /* "Spasi" dugme u TREĆEM redu */
     .spasi {
         order: 4; 
         width: 100%;
         margin: 0;
     }
 
-    /* Sidebar IZNAD editora */
+   
     .okvir {
         flex-direction: column;
     }
@@ -283,15 +360,15 @@ header h1  {
         overflow-y: auto;
     }
 
-    /* Editor ispod sidebara */
+    
     .desno {
         margin: 20px 20px 20px 20px;
         padding: 20px;
         overflow-x: hidden;
     }
      .tekstScenarija {
-        font-size: 14pt; /* ← Manji font na malim ekranima */
-        margin: 1.5em 0; /* ← Manji margin */
+        font-size: 14pt; 
+        margin: 1.5em 0; 
     }
 
     /* Elementi u sidebaru */

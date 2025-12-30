@@ -170,8 +170,8 @@ button:hover{
   position: relative;
   border: 2px solid blue; 
  
-  display: flex;  /* ← Dodaj ovo */
-  flex-direction: column;  /* ← Dodaj ovo */
+  display: flex;  
+  flex-direction: column;  
 }
 
 
@@ -283,14 +283,14 @@ button:hover{
 
     /* FIX ZA "AKTIVAN" BADGE */
     .kartica.active .naziv {
-        padding-right: 90px; /* ← Prostor za badge */
+        padding-right: 90px; /
     }
     
     .kartica.active::before {
-        font-size: 13px; /*  Manji font */
-        padding: 4px 8px; /* ← Manji padding */
-        top: 15px; /* ← Bliže vrhu */
-        right: 15px; /* ← Bliže desnoj ivici */
+        font-size: 13px; 
+        padding: 4px 8px; 
+        top: 15px; 
+        right: 15px; 
     }
 
     /* User profile u sidebaru */
