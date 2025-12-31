@@ -1,0 +1,24 @@
+{
+  "name": "wt26p19585",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://bitbucket.org/aalispahic5/wt26p19585#readme",
+  "bugs": {
+    "url": "https://bitbucket.org/aalispahic5/wt26p19585/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aalispahic1@bitbucket.org/aalispahic5/wt26p19585.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

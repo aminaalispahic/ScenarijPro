@@ -1,0 +1,265 @@
+[
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "NOVA LINIJA",
+    "timestamp": 1767206585
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "NOVA LINIJA 2",
+    "timestamp": 1767206618
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "MARKO",
+    "newName": "JOVAN",
+    "timestamp": 1767206758
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "prepravka",
+    "timestamp": 1767208127
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "marko",
+    "newName": "jovan",
+    "timestamp": 1767208161
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "marko: Dobar dan svima",
+    "timestamp": 1767208173
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "marko",
+    "newName": "jovan",
+    "timestamp": 1767208179
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "promjenA",
+    "timestamp": 1767208910
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "MARKO",
+    "newName": "HASAN",
+    "timestamp": 1767208949
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "MARKO: dobar dan svima",
+    "timestamp": 1767208970
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "MARKO",
+    "newName": "HASAN",
+    "timestamp": 1767208979
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 2,
+    "nextLineId": null,
+    "content": "provjera",
+    "timestamp": 1767209476
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 2,
+    "nextLineId": null,
+    "content": "tekst",
+    "timestamp": 1767210808
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 2,
+    "content": "Novi tekst",
+    "timestamp": 1767211753
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 2,
+    "content": "HASAN: Gdje ste svi vi",
+    "timestamp": 1767211782
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 2,
+    "content": "ovo je novo",
+    "timestamp": 1767211936
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 3,
+    "content": "ovo je neka rijec koju cu zamjeniti sa ostalima da vidim radi li mi prelamanje u dva reda sto mislim",
+    "timestamp": 1767212006
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 3,
+    "nextLineId": 2,
+    "content": "da bi trebalo ovo je super hajd dalje idemo da jos napunimo fond rijeci",
+    "timestamp": 1767212006
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 4,
+    "content": "Programiranje je proces stvaranja računalnih programa koji rješavaju specifične probleme. Koristi se za razvoj web stranica, mobilnih aplikacija, softverskih rješenja",
+    "timestamp": 1767212122
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 4,
+    "nextLineId": 3,
+    "content": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
+    "timestamp": 1767212122
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 5,
+    "content": "Programiranje je proces stvaranja računalnih programa koji rješavaju specifične probleme. Koristi se za razvoj web stranica, mobilnih aplikacija, softverskih rješenja",
+    "timestamp": 1767212275
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 5,
+    "nextLineId": 4,
+    "content": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
+    "timestamp": 1767212275
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "Učenje novih vještina može biti izazovno, ali i veoma korisno. Svaki napredak donosi osjećaj postignuća i zadovoljstva.",
+    "timestamp": 1767212380
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "Učenje novih vještina može biti izazovno, ali i veoma korisno. Svaki napredak donosi osjećaj postignuća i zadovoljstva jos jedna",
+    "timestamp": 1767212419
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 2,
+    "content": "Učenje novih vještina može biti izazovno, ali i veoma korisno. Svaki napredak donosi osjećaj postignuća i zadovoljstva da bude jos",
+    "timestamp": 1767212487
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 2,
+    "nextLineId": null,
+    "content": "jedna rijec da prede novi red",
+    "timestamp": 1767212487
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 2,
+    "content": "Ovo je novi tekst linije.",
+    "timestamp": 1767213019
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 2,
+    "content": "",
+    "timestamp": 1767213132
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 1,
+    "nextLineId": 3,
+    "content": "jedan tekst",
+    "timestamp": 1767213260
+  },
+  {
+    "scenarioId": 2,
+    "type": "line_update",
+    "lineId": 3,
+    "nextLineId": 2,
+    "content": "drugi tekst",
+    "timestamp": 1767213260
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "marko",
+    "newName": "ivana",
+    "timestamp": 1767214454
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "MARKO",
+    "newName": "ivana",
+    "timestamp": 1767214483
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "ivana",
+    "newName": "ivana2",
+    "timestamp": 1767214540
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "ivana2",
+    "newName": "MARKO",
+    "timestamp": 1767214840
+  }
+]

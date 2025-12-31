@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "title": "Prvi scenarij",
+  "content": [
+    {
+      "lineId": 1,
+      "nextLineId": 5,
+      "text": "Programiranje je proces stvaranja računalnih programa koji rješavaju specifične probleme. Koristi se za razvoj web stranica, mobilnih aplikacija, softverskih rješenja"
+    },
+    {
+      "lineId": 5,
+      "text": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
+      "nextLineId": 4
+    },
+    {
+      "lineId": 4,
+      "text": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
+      "nextLineId": 3
+    },
+    {
+      "lineId": 3,
+      "text": "da bi trebalo ovo je super hajd dalje idemo da jos napunimo fond rijeci",
+      "nextLineId": 2
+    },
+    {
+      "lineId": 2,
+      "nextLineId": 6,
+      "text": "MARKO: Dobar dan svima"
+    },
+    {
+      "lineId": 6,
+      "nextLineId": null,
+      "text": "MARKO: Dobar dan svima opet"
+    }
+  ]
+}

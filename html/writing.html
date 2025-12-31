@@ -1,96 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
-
-    <link href="../css/writing.css" rel="stylesheet"> <!--da vidim je li ok-->
     
     
+    <link href="/css/writing.css" rel="stylesheet">
     
     <title>ScenarijPro</title>
   </head>
   <body>
     
-   
-   <header>
-    <button class="strelica"><i class="fas fa-arrow-left"></i></button>
-    <h1>THE LAST STARSHIP (Draft 2)</h1> <!-- Naslov u velikim slovima -->
-    <div class="dugmici">
+    <header>
+      <button class="strelica"><i class="fas fa-arrow-left"></i></button>
+      <h1>THE LAST STARSHIP (Draft 2)</h1>
+      <div class="dugmici">
         <button class="scena">SCENA</button>
         <button class="akcija">Akcija</button>
         <button class="lik">Lik</button>
         <button class="dijalog">Dijalog</button>
+      </div>
+      <button class="spasi"> <i class="fas fa-check"></i>Spasi</button>
+    </header>
+  
+    <div class="pozivi">
+      <button id="boldiraj">Bold</button>
+      <button id="italik">Italic</button>
+      <button id="PODVUCI">Underline</button>
+      <button id="brojrijeci">Broj rijeci</button>
+      <button id="uloge">Uloge</button>
+      <button id="pogresneUloge">Pogresne uloge</button>
+      <input type="text" id="nadiUloge" name="uloge" placeholder="Napisite ulogu" >
+      <button id="brojLinija">Broj linija</button>
+      <button id="scenarij">Scenarij Uloge</button>
+      <button id="grupisanje">Grupisi uloge</button>
     </div>
-    <button class="spasi"> <i class="fas fa-check"></i>Spasi</button>
-  </header>
-  <div class="pozivi">
-    <button id="boldiraj">Bold</button>
-    <button id="italik">Italic</button>
-    <button id="PODVUCI">Underline</button>
-   <button id="brojrijeci">Broj rijeci</button>
-   <button id="uloge">Uloge</button>
-   <button id="pogresneUloge">Pogresne uloge</button>
-   <input type="text" id="nadiUloge" name="uloge" placeholder="Napisite ulogu" >
-   <button id="brojLinija">Broj linija</button>
-  <button id="scenarij">Scenarij Uloge</button>
-   <button id="grupisanje">Grupisi uloge</button>
-  </div> <!--Div za pozivanje funkcija u JS-u-->
-  <div class="okvir">
-  <div class="lijevo">
+  
+    
+    <div class="backend-controls">
+      <div class="form-section">
+        <label >UserId: </label>
+        <input type="number" id="userId" placeholder="User ID" />
+        <label >ScenarioId: </label>
+        <input type="number" id="scenarioId" placeholder="Scenario ID" />
+        <button class="btn-blue" id="loadScenarioBtn">Učitaj Scenarijo</button>
+      </div>
+
+      <div class="form-section">
+        <label >Naslov scenarija: </label>
+        <input type="text" id="scenarioTitle" placeholder="Naslov scenarija" />
+        <button class="btn-blue" id="createScenarioBtn">Kreiraj Novi</button>
+      </div>
+
+      <div class="form-section">
+         <label >Unesite id linije: </label>
+        <input type="number" id="lineId" placeholder="Line ID" />
+        <button class="btn-orange" id="lockLineBtn">Zaključaj Liniju</button>
+        <button class="btn-orange" id="unlockLineBtn">Otključaj Liniju</button>
+      </div>
+
+      <div class="form-section">
+        <label >Unesite id linije za ažuriranje: </label>
+        <input type="number" id="updateLineId" placeholder="Line ID za Ažuriranje" />
+        <label >Unesite novi tekst: </label>
+        <textarea id="newLineText" placeholder="Novi Tekst Linije"></textarea>
+        <button class="btn-orange" id="updateLineBtn">Ažuriraj Liniju</button>
+      </div>
+
+      <div class="form-section">
+        <label >Zaključajte ime lika: </label>
+        <input type="text" id="lockCharacterName" placeholder="Zaključa ime lika" />
+        <button class="btn-purple" id="lockCharacterBtn">Zaključaj Ime Lika</button>
+      </div>
+
+      <div class="form-section">
+        <label >Unesite staro ime lika: </label>
+        <input type="text" id="oldCharacterName" placeholder="Staro Ime Lika" />
+        <label >Unesite novo ime lika: </label>
+        <input type="text" id="newCharacterName" placeholder="Novo Ime Lika" />
+        <button class="btn-purple" id="changeCharacterNameBtn">Promijeni Ime Lika</button>
+      </div>
+
+      <div class="form-section">
+        <label>Unesite od kada želite promjene:</label>
+        <input type="number" id="deltasInput" placeholder="Delta Promjene (since)" />
+        <button id="showDeltasBtn" class="btn">Učitaj Promjene</button>
+    </div>
+    
+    <div class="form-section">
+        <label>Detalji scenarija, unesite id:</label>
+        <input type="number" id="scenarioDetailsInput" placeholder="Detalji" />
+        <button id="showScenarioDetailsBtn" class="btn">Daj detalje</button>
+    </div>
+    
+    <div id="statusMessage" class="status-message"></div>
+</div>
+
+<br>
+
+<!-- Prikaz info o detaljima i deltas -->
+<div id="deltasContainer" class="deltas-container"></div>
+<div id="scenarioDetailsContainer" class="scenario-details-container"></div>
+   
+
+  
+    <div class="okvir">
+      <div class="lijevo">
         <div class="scene-counter">
-            
-            <span>Scene: <strong id="brojacScene">(12)</strong></span>
+          <span>Scene: <strong id="brojacScene">(12)</strong></span>
         </div>
-       <ol id="listaScena" class="scene-lista">
-        <!-- Scene će biti generirane JavaScript-om -->
+        <ol id="listaScena" class="scene-lista">
           <li class="elementi active">
             <div class="naslovScene" id="naslov">INT. STARSHIP BRIDGE - NIGHT</div>
-                <div class="scene-pages" id="brojStranica">(5/8)</div>
-            </li>
-            <li class="elementi">
-                <div class="naslovScene" id="naslov">EXT.ASTEROID FILED-DAY</div>
-                <div class="scene-pages" id="brojStranica">(3/8)</div>
-
-            </li>
-            <li class="elementi">
-                <div class="naslovScene" id="naslov">int. engine room- night</div>
-                <div class="scene-pages" id="brojStranica">(2/8)</div>
-            </li>
-    </ol>
+            <div class="scene-pages" id="brojStranica">(5/8)</div>
+          </li>
+          <li class="elementi">
+            <div class="naslovScene" id="naslov">EXT.ASTEROID FILED-DAY</div>
+            <div class="scene-pages" id="brojStranica">(3/8)</div>
+          </li>
+          <li class="elementi">
+            <div class="naslovScene" id="naslov">int. engine room- night</div>
+            <div class="scene-pages" id="brojStranica">(2/8)</div>
+          </li>
+        </ol>
+      </div>
+      
+      <div class="editor-dio"> 
+        <div id="poruke"></div>
+          
         
-    </div><!--kraj lijevo-->
-   <div class="editor-dio"> 
-            <div id="poruke">
-                
-            </div>
-            
-            <div id="divEditor" contenteditable="true" class="desno" >
-                
-                <h1 class="naslovScenarija">EXT. LUNAR SURFACE - DAY</h1>
-                <p class="tekstScenarija"> 
-                    MAR<b>KO</b><br>
-                    Pozdrav svima.<br>
-                    IVAN<br>
-                    I tebi pozdrav.<br>
-                    GLAS IZ POZADINE<br>
-                    (šapat)<br>
-                    Jeste li tu?<br>
-                    MARKO<br>
-                    Tu sam.<br></p>
-
-                
-
-                    
-                
-            </div><!--kraj desno-->
+        <div id="divEditor" contenteditable="true" class="desno">
+          <h1 class="naslovScenarija">EXT. LUNAR SURFACE - DAY</h1>
+          <p class="tekstScenarija"> 
+            MARKO<br>
+            Pozdrav svima.<br>
+            IVAN<br>
+            I tebi pozdrav.<br>
+            GLAS IZ POZADINE<br>
+            (šapat)<br>
+            Jeste li tu?<br>
+            MARKO<br>
+            Tu sam.<br>
+          </p>
         </div>
-        
-    </div><!--kraj okvira-->
- <script src="../js/EditorTeksta.js"></script>
-    <script src="../js/editor.js"></script>
+      </div>
+    </div>
+    
+    
+    <script src="/js/EditorTeksta.js"></script>
+    <script src="/js/PoziviAjaxFetch.js"></script>
+    <script src="/js/editor.js"></script>
   </body>
 </html>
