@@ -1,36 +1,86 @@
 {
   "id": 1,
-  "title": "Prvi scenarij",
+  "title": "Potraga za izgubljenim ključem",
   "content": [
     {
       "lineId": 1,
-      "nextLineId": 5,
-      "text": "Programiranje je proces stvaranja računalnih programa koji rješavaju specifične probleme. Koristi se za razvoj web stranica, mobilnih aplikacija, softverskih rješenja"
+      "nextLineId": 2,
+      "text": "NARATOR: Sunce je polako zalazilo nad starim gradom."
     },
     {
-      "lineId": 5,
-      "text": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
+      "lineId": 2,
+      "nextLineId": 3,
+      "text": "ALICIA: Jesi li siguran da je ključ ostao u biblioteci?"
+    },
+    {
+      "lineId": 3,
+      "nextLineId": 15,
+      "text": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ"
+    },
+    {
+      "lineId": 15,
+      "text": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+      "nextLineId": 16
+    },
+    {
+      "lineId": 16,
+      "text": "riječ riječ riječ riječ riječ",
+      "nextLineId": 13
+    },
+    {
+      "lineId": 13,
+      "text": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+      "nextLineId": 14
+    },
+    {
+      "lineId": 14,
+      "text": "riječ riječ riječ riječ riječ",
+      "nextLineId": 11
+    },
+    {
+      "lineId": 11,
+      "text": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+      "nextLineId": 12
+    },
+    {
+      "lineId": 12,
+      "text": "riječ riječ riječ riječ riječ",
+      "nextLineId": 9
+    },
+    {
+      "lineId": 9,
+      "text": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+      "nextLineId": 10
+    },
+    {
+      "lineId": 10,
+      "text": "riječ riječ riječ riječ riječ",
+      "nextLineId": 7
+    },
+    {
+      "lineId": 7,
+      "text": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+      "nextLineId": 8
+    },
+    {
+      "lineId": 8,
+      "text": "riječ riječ riječ riječ riječ",
       "nextLineId": 4
     },
     {
       "lineId": 4,
-      "text": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
-      "nextLineId": 3
+      "nextLineId": 5,
+      "text": "ALICIA: Moramo požuriti prije nego što čuvar zaključa glavna vrata."
     },
     {
-      "lineId": 3,
-      "text": "da bi trebalo ovo je super hajd dalje idemo da jos napunimo fond rijeci",
-      "nextLineId": 2
-    },
-    {
-      "lineId": 2,
+      "lineId": 5,
       "nextLineId": 6,
-      "text": "MARKO: Dobar dan svima"
+      "text": "BOB: Čekaj, čuješ li taj zvuk iza polica?"
     },
     {
       "lineId": 6,
       "nextLineId": null,
-      "text": "MARKO: Dobar dan svima opet"
+      "text": "NARATOR: Iz sjene se polako pojavila nepoznata figura."
     }
   ]
 }

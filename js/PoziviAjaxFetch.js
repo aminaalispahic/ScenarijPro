@@ -1,7 +1,7 @@
-const PoziviAjax = (function() {
+const PoziviAjaxFetch = (function() {
     return {
         // Funkcija za POST zahtjev (kreiranje scenarija)
-        dodajScenario: function(title, callback) {
+        postScenario: function(title, callback) {
             fetch('/api/scenarios', {  
                 method: 'POST',
                 headers: {
@@ -22,7 +22,7 @@ const PoziviAjax = (function() {
         },
 
         // Funkcija za zaključavanje linije
-        zakljucajLiniju: function(scenarioId, lineId, userId, callback) {
+        lockLine: function(scenarioId, lineId, userId, callback) {
             fetch(`/api/scenarios/${scenarioId}/lines/${lineId}/lock`, {  
                 method: 'POST',
                 headers: {
@@ -43,7 +43,7 @@ const PoziviAjax = (function() {
         },
 
         // Funkcija za ažuriranje linije
-        azurirajLiniju: function(scenarioId, lineId, userId, newText, callback) {
+        updateLine: function(scenarioId, lineId, userId, newText, callback) {
             fetch(`/api/scenarios/${scenarioId}/lines/${lineId}`, {  
                 method: 'PUT',
                 headers: {
@@ -64,7 +64,7 @@ const PoziviAjax = (function() {
         },
 
         // Funkcija za zaključavanje karaktera
-        zakljucajKarakter: function(scenarioId, userId, karakter, callback) {
+        lockCharacter: function(scenarioId, userId, karakter, callback) {
             fetch(`/api/scenarios/${scenarioId}/characters/lock`, {  
                 method: 'POST',
                 headers: {
@@ -85,7 +85,7 @@ const PoziviAjax = (function() {
         },
 
         // Funkcija za promjenu imena karaktera
-        promijeniUlogu: function(scenarioId, userId, karakterStari, novi, callback) {
+        updateCharacter: function(scenarioId, userId, karakterStari, novi, callback) {
             fetch(`/api/scenarios/${scenarioId}/characters/update`, {  
                 method: 'POST',
                 headers: {
@@ -106,7 +106,7 @@ const PoziviAjax = (function() {
         },
 
         // Funkcija za dohvat promjena (deltas)
-        dajPromjene: function(scenarioId, vrijeme, callback) {
+        getDeltas: function(scenarioId, vrijeme, callback) {
             fetch(`/api/scenarios/${scenarioId}/deltas?since=${vrijeme}`, {  
                 method: 'GET',
                 headers: {
@@ -126,7 +126,7 @@ const PoziviAjax = (function() {
         },
 
         // Funkcija za dohvat scenarija
-        dajScenarije: function(scenarioId, callback) {
+        getScenario: function(scenarioId, callback) {
             fetch(`/api/scenarios/${scenarioId}`, {  
                 method: 'GET',
                 headers: {

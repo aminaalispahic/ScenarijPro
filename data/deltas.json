@@ -3,263 +3,210 @@
     "scenarioId": 1,
     "type": "line_update",
     "lineId": 1,
-    "nextLineId": null,
-    "content": "NOVA LINIJA",
-    "timestamp": 1767206585
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": null,
-    "content": "NOVA LINIJA 2",
-    "timestamp": 1767206618
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "MARKO",
-    "newName": "JOVAN",
-    "timestamp": 1767206758
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": null,
-    "content": "prepravka",
-    "timestamp": 1767208127
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "marko",
-    "newName": "jovan",
-    "timestamp": 1767208161
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": null,
-    "content": "marko: Dobar dan svima",
-    "timestamp": 1767208173
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "marko",
-    "newName": "jovan",
-    "timestamp": 1767208179
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": null,
-    "content": "promjenA",
-    "timestamp": 1767208910
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "MARKO",
-    "newName": "HASAN",
-    "timestamp": 1767208949
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": null,
-    "content": "MARKO: dobar dan svima",
-    "timestamp": 1767208970
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "MARKO",
-    "newName": "HASAN",
-    "timestamp": 1767208979
+    "nextLineId": 2,
+    "content": "NARATOR: Sunce je polako zalazilo nad starim gradom.",
+    "timestamp": 1736520000
   },
   {
     "scenarioId": 1,
     "type": "line_update",
     "lineId": 2,
-    "nextLineId": null,
-    "content": "provjera",
-    "timestamp": 1767209476
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 2,
-    "nextLineId": null,
-    "content": "tekst",
-    "timestamp": 1767210808
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": 2,
-    "content": "Novi tekst",
-    "timestamp": 1767211753
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": 2,
-    "content": "HASAN: Gdje ste svi vi",
-    "timestamp": 1767211782
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": 2,
-    "content": "ovo je novo",
-    "timestamp": 1767211936
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
     "nextLineId": 3,
-    "content": "ovo je neka rijec koju cu zamjeniti sa ostalima da vidim radi li mi prelamanje u dva reda sto mislim",
-    "timestamp": 1767212006
+    "content": "ALICE: Jesi li siguran da je ključ ostao u biblioteci?",
+    "timestamp": 1736520010
   },
   {
     "scenarioId": 1,
     "type": "line_update",
     "lineId": 3,
-    "nextLineId": 2,
-    "content": "da bi trebalo ovo je super hajd dalje idemo da jos napunimo fond rijeci",
-    "timestamp": 1767212006
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
     "nextLineId": 4,
-    "content": "Programiranje je proces stvaranja računalnih programa koji rješavaju specifične probleme. Koristi se za razvoj web stranica, mobilnih aplikacija, softverskih rješenja",
-    "timestamp": 1767212122
+    "content": "BOB: To je posljednje mjesto gdje sam ga vidio prije nego što je pala noć.",
+    "timestamp": 1736520020
   },
   {
     "scenarioId": 1,
     "type": "line_update",
     "lineId": 4,
-    "nextLineId": 3,
-    "content": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
-    "timestamp": 1767212122
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 1,
     "nextLineId": 5,
-    "content": "Programiranje je proces stvaranja računalnih programa koji rješavaju specifične probleme. Koristi se za razvoj web stranica, mobilnih aplikacija, softverskih rješenja",
-    "timestamp": 1767212275
+    "content": "ALICE: Moramo požuriti prije nego što čuvar zaključa glavna vrata.",
+    "timestamp": 1736520030
   },
   {
     "scenarioId": 1,
     "type": "line_update",
     "lineId": 5,
-    "nextLineId": 4,
-    "content": "i automatskih sistema. Programeri pišu kod koristeći različite programske jezike, kao što su JavaScript, Python, Java i C++.",
-    "timestamp": 1767212275
+    "nextLineId": 6,
+    "content": "BOB: Čekaj, čuješ li taj zvuk iza polica?",
+    "timestamp": 1736520040
   },
   {
-    "scenarioId": 2,
+    "scenarioId": 1,
     "type": "line_update",
-    "lineId": 1,
+    "lineId": 6,
     "nextLineId": null,
-    "content": "Učenje novih vještina može biti izazovno, ali i veoma korisno. Svaki napredak donosi osjećaj postignuća i zadovoljstva.",
-    "timestamp": 1767212380
+    "content": "NARATOR: Iz sjene se polako pojavila nepoznata figura.",
+    "timestamp": 1736520050
   },
   {
-    "scenarioId": 2,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": null,
-    "content": "Učenje novih vještina može biti izazovno, ali i veoma korisno. Svaki napredak donosi osjećaj postignuća i zadovoljstva jos jedna",
-    "timestamp": 1767212419
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "BOB",
+    "newName": "ROBERT",
+    "timestamp": 1736520100
   },
   {
-    "scenarioId": 2,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": 2,
-    "content": "Učenje novih vještina može biti izazovno, ali i veoma korisno. Svaki napredak donosi osjećaj postignuća i zadovoljstva da bude jos",
-    "timestamp": 1767212487
-  },
-  {
-    "scenarioId": 2,
-    "type": "line_update",
-    "lineId": 2,
-    "nextLineId": null,
-    "content": "jedna rijec da prede novi red",
-    "timestamp": 1767212487
-  },
-  {
-    "scenarioId": 2,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": 2,
-    "content": "Ovo je novi tekst linije.",
-    "timestamp": 1767213019
-  },
-  {
-    "scenarioId": 2,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": 2,
-    "content": "",
-    "timestamp": 1767213132
-  },
-  {
-    "scenarioId": 2,
-    "type": "line_update",
-    "lineId": 1,
-    "nextLineId": 3,
-    "content": "jedan tekst",
-    "timestamp": 1767213260
-  },
-  {
-    "scenarioId": 2,
+    "scenarioId": 1,
     "type": "line_update",
     "lineId": 3,
-    "nextLineId": 2,
-    "content": "drugi tekst",
-    "timestamp": 1767213260
+    "nextLineId": 7,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768343623
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 7,
+    "nextLineId": 8,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768343623
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 8,
+    "nextLineId": 4,
+    "content": "riječ riječ riječ riječ riječ",
+    "timestamp": 1768343623
   },
   {
     "scenarioId": 1,
     "type": "char_rename",
-    "oldName": "marko",
-    "newName": "ivana",
-    "timestamp": 1767214454
+    "oldName": "ALICE",
+    "newName": "ALICIA",
+    "timestamp": 1768343623
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 3,
+    "nextLineId": 9,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768344933
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 9,
+    "nextLineId": 10,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768344933
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 10,
+    "nextLineId": 7,
+    "content": "riječ riječ riječ riječ riječ",
+    "timestamp": 1768344933
   },
   {
     "scenarioId": 1,
     "type": "char_rename",
-    "oldName": "MARKO",
-    "newName": "ivana",
-    "timestamp": 1767214483
+    "oldName": "ALICE",
+    "newName": "ALICIA",
+    "timestamp": 1768344933
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 3,
+    "nextLineId": 11,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768345867
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 11,
+    "nextLineId": 12,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768345867
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 12,
+    "nextLineId": 9,
+    "content": "riječ riječ riječ riječ riječ",
+    "timestamp": 1768345867
   },
   {
     "scenarioId": 1,
     "type": "char_rename",
-    "oldName": "ivana",
-    "newName": "ivana2",
-    "timestamp": 1767214540
+    "oldName": "ALICE",
+    "newName": "ALICIA",
+    "timestamp": 1768345867
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 3,
+    "nextLineId": 13,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768345969
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 13,
+    "nextLineId": 14,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768345969
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 14,
+    "nextLineId": 11,
+    "content": "riječ riječ riječ riječ riječ",
+    "timestamp": 1768345969
   },
   {
     "scenarioId": 1,
     "type": "char_rename",
-    "oldName": "ivana2",
-    "newName": "MARKO",
-    "timestamp": 1767214840
+    "oldName": "ALICE",
+    "newName": "ALICIA",
+    "timestamp": 1768345969
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 3,
+    "nextLineId": 15,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768345998
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 15,
+    "nextLineId": 16,
+    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
+    "timestamp": 1768345998
+  },
+  {
+    "scenarioId": 1,
+    "type": "line_update",
+    "lineId": 16,
+    "nextLineId": 13,
+    "content": "riječ riječ riječ riječ riječ",
+    "timestamp": 1768345998
+  },
+  {
+    "scenarioId": 1,
+    "type": "char_rename",
+    "oldName": "ALICE",
+    "newName": "ALICIA",
+    "timestamp": 1768345998
   }
 ]
