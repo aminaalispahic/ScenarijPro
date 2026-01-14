@@ -60,7 +60,7 @@
     "lineId": 3,
     "nextLineId": 7,
     "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768343623
+    "timestamp": 1768395627
   },
   {
     "scenarioId": 1,
@@ -68,7 +68,7 @@
     "lineId": 7,
     "nextLineId": 8,
     "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768343623
+    "timestamp": 1768395627
   },
   {
     "scenarioId": 1,
@@ -76,137 +76,21 @@
     "lineId": 8,
     "nextLineId": 4,
     "content": "riječ riječ riječ riječ riječ",
-    "timestamp": 1768343623
+    "timestamp": 1768395627
   },
   {
     "scenarioId": 1,
     "type": "char_rename",
     "oldName": "ALICE",
     "newName": "ALICIA",
-    "timestamp": 1768343623
+    "timestamp": 1768395627
   },
   {
-    "scenarioId": 1,
+    "scenarioId": 15,
     "type": "line_update",
-    "lineId": 3,
-    "nextLineId": 9,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768344933
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 9,
-    "nextLineId": 10,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768344933
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 10,
-    "nextLineId": 7,
-    "content": "riječ riječ riječ riječ riječ",
-    "timestamp": 1768344933
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "ALICE",
-    "newName": "ALICIA",
-    "timestamp": 1768344933
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 3,
-    "nextLineId": 11,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768345867
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 11,
-    "nextLineId": 12,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768345867
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 12,
-    "nextLineId": 9,
-    "content": "riječ riječ riječ riječ riječ",
-    "timestamp": 1768345867
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "ALICE",
-    "newName": "ALICIA",
-    "timestamp": 1768345867
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 3,
-    "nextLineId": 13,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768345969
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 13,
-    "nextLineId": 14,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768345969
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 14,
-    "nextLineId": 11,
-    "content": "riječ riječ riječ riječ riječ",
-    "timestamp": 1768345969
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "ALICE",
-    "newName": "ALICIA",
-    "timestamp": 1768345969
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 3,
-    "nextLineId": 15,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768345998
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 15,
-    "nextLineId": 16,
-    "content": "riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ riječ",
-    "timestamp": 1768345998
-  },
-  {
-    "scenarioId": 1,
-    "type": "line_update",
-    "lineId": 16,
-    "nextLineId": 13,
-    "content": "riječ riječ riječ riječ riječ",
-    "timestamp": 1768345998
-  },
-  {
-    "scenarioId": 1,
-    "type": "char_rename",
-    "oldName": "ALICE",
-    "newName": "ALICIA",
-    "timestamp": 1768345998
+    "lineId": 1,
+    "nextLineId": null,
+    "content": "nova linija",
+    "timestamp": 1768395708
   }
 ]

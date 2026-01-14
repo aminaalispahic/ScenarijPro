@@ -1,4 +1,4 @@
-const PoziviAjaxFetch = (function() {
+const PoziviAjaxFetch= (function() {
     return {
         // Funkcija za POST zahtjev (kreiranje scenarija)
         postScenario: function(title, callback) {

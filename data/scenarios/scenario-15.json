@@ -1,0 +1,11 @@
+{
+  "id": 15,
+  "title": "novi scenarij",
+  "content": [
+    {
+      "lineId": 1,
+      "nextLineId": null,
+      "text": "nova linija"
+    }
+  ]
+}

@@ -300,7 +300,7 @@ document.getElementById('showDeltasBtn').addEventListener('click', async () => {
         }
         
         
-        PoziviAjax.dajPromjene(scenarioId, 0, function(status, data) {
+        PoziviAjaxFetch.getDeltas(scenarioId, 0, function(status, data) {
             if (status !== 200) {
                 prikaziStatus('Greška: ' + (data.error || data.message), 'error');
                 return;
@@ -393,7 +393,7 @@ document.getElementById('showScenarioDetailsBtn').addEventListener('click', asyn
 // ===== FUNKCIJE ZA POZIVE BACKENDA =====
 
 function kreirajScenarij(title) {
-    PoziviAjax.dodajScenario(title, function(status, data) {
+    PoziviAjaxFetch.postScenario(title, function(status, data) {
         if (status !== 200) {
             prikaziStatus('Greška pri kreiranju scenarija: ' + (data.error || data.message), 'error');
             return;
@@ -409,7 +409,7 @@ function kreirajScenarij(title) {
 function ucitajScenarij(scenarioId) {
     if (!scenarioId) return;
     
-    PoziviAjax.dajScenarije(scenarioId, function(status, data) {
+    PoziviAjaxFetch.getScenario(scenarioId, function(status, data) {
         if (status !== 200) {
             prikaziStatus('Greška pri učitavanju scenarija: ' + (data.error || data.message), 'error');
             return;
@@ -422,7 +422,7 @@ function ucitajScenarij(scenarioId) {
 }
 
 function zakljucajLiniju(scenarioId, lineId, userId) {
-    PoziviAjax.zakljucajLiniju(scenarioId, lineId, userId, function(status, data) {
+    PoziviAjaxFetch.lockLine(scenarioId, lineId, userId, function(status, data) {
         if (status !== 200) {
             prikaziStatus('Greška: ' + data.message, 'error');
             return;
@@ -435,7 +435,7 @@ function zakljucajLiniju(scenarioId, lineId, userId) {
 }
 
 function azurirajLiniju(scenarioId, lineId, userId, newText) {
-    PoziviAjax.azurirajLiniju(scenarioId, lineId, userId, newText, function(status, data) {
+    PoziviAjaxFetch.updateLine(scenarioId, lineId, userId, newText, function(status, data) {
         if (status !== 200) {
             prikaziStatus('Greška: ' + data.message, 'error');
             return;
@@ -448,7 +448,7 @@ function azurirajLiniju(scenarioId, lineId, userId, newText) {
 }
 
 function zakljucajKarakter(scenarioId, userId, karakterIme) {
-    PoziviAjax.zakljucajKarakter(scenarioId, userId, karakterIme, function(status, data) {
+    PoziviAjaxFetch.lockCharacter(scenarioId, userId, karakterIme, function(status, data) {
         if (status !== 200) {
             prikaziStatus('Greška: ' + data.message, 'error');
             return;
@@ -459,7 +459,7 @@ function zakljucajKarakter(scenarioId, userId, karakterIme) {
 }
 
 function promijeniImeKaraktera(scenarioId, userId, staro, novo) {
-    PoziviAjax.promijeniUlogu(scenarioId, userId, staro, novo, function(status, data) {
+    PoziviAjaxFetch.updateCharacter(scenarioId, userId, staro, novo, function(status, data) {
         if (status !== 200) {
             prikaziStatus('Greška: ' + data.message, 'error');
             return;
@@ -471,7 +471,7 @@ function promijeniImeKaraktera(scenarioId, userId, staro, novo) {
 }
 
 function ucitajPromjene(scenarioId, since) {
-    PoziviAjax.dajPromjene(scenarioId, since, function(status, data) {
+    PoziviAjaxFetch.getDeltas(scenarioId, since, function(status, data) {
         if (status !== 200) {
             prikaziStatus('Greška: ' + (data.error || data.message), 'error');
             return;

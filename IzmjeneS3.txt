@@ -1,0 +1,4 @@
+Izmjene na spirali 3:
+
+-promjena naziva metoda u poziviAjaxFetch I editor.js (nazivi metoda su bili na bosanskom a testovi su tražili na engleskom)
+- promjena varijable PoziviAjax u PoziviAjaxFetch u poziviAjaxFetch
