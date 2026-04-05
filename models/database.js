@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('wt26', 'root', 'password', {
+const sequelize = new Sequelize('wt26', 'root', '', {
     host: 'localhost',
     dialect: 'mysql',
     logging: false
